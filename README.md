@@ -13,3 +13,4 @@ https://github.com/Ar4i23/movies-explorer-frontend/pull/1
 ### ссылка на публичный репозиторий в github:
 
 https://Ar4i23.github.io/movies-explorer-frontend/
+.
