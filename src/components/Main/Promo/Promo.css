@@ -81,3 +81,13 @@
     margin: 0 0 -8px 0;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .promo__wrappers {
+    padding: 108px 36px 140px;
+  }
+
+  .promo__title {
+    width: 317px;
+  }
+}

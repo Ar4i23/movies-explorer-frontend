@@ -7,7 +7,7 @@ function Profile() {
     <>
       <section className="profile">
         <h1 className="profile__title">Привет, Виталий!</h1>
-        <form id="form" className="profile__form" noValidate>
+        <form id="form" name="form-profile" className="profile__form" noValidate>
           <label className="profile__label">
             Имя
             <input
@@ -37,7 +37,7 @@ function Profile() {
           <button type="submit" className="profile__button-edit" disabled>
             Редактировать
           </button>
-          <Link to="/" type="button" className="profile__signout">
+          <Link to="/" className="profile__signout">
             Выйти из аккаунта
           </Link>
         </form>

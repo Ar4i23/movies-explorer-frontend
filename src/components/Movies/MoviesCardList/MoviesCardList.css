@@ -47,8 +47,8 @@
     padding: 0;
     margin: 81px auto -37px;
     grid-template-columns: repeat(2, 339px);
-    gap: 10px 30px;
-    max-height: 1238px;
+    gap: 30px 30px;
+    /*max-height: 1238px;*/
   }
 
   .films__button {
@@ -84,5 +84,11 @@
 @media screen and (max-width: 380px) {
   .films__button {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .films__list {
+    gap: 13px 30px;
   }
 }

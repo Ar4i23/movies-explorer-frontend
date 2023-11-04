@@ -44,7 +44,10 @@ function Header() {
             <Link to="/signup" className="header__button">
               Регистрация
             </Link>
-            <Link to="/signin" className="header__button header__button-green">
+            <Link
+              to="/signin"
+              className="header__button header__button_theme_primary"
+            >
               Войти
             </Link>
           </nav>
@@ -52,23 +55,15 @@ function Header() {
       )}
 
       {getShowTwoHeader() && (
-        <header className="header header_place">
+        <header className="header header_place_theme_dark">
           <Link to="/" className="logo">
             <img src={logo} alt="Логотип сайта по поиску фильмов" />
           </Link>
           <nav className="header__button-container-movie">
-            <NavLink
-              to="/movies"
-              className="header__button"
-              activeclassname="header__button_active-color"
-            >
+            <NavLink to="/movies" className="header__button">
               Фильмы
             </NavLink>
-            <NavLink
-              to="/saved-movies"
-              className="header__button"
-              activeclassname="header__button_active-color"
-            >
+            <NavLink to="/saved-movies" className="header__button">
               Сохранённые фильмы
             </NavLink>
           </nav>

@@ -11,7 +11,7 @@ function Form({ linkText, link, children, title, buttonText, question }) {
           <img src={logo} alt="Логотип сайта" />
         </Link>
         <h1 className="form__title">{title}</h1>
-        <form className="forma" id="form" noValidate>
+        <form className="forma" id="form" name="form" noValidate>
           {children}
           <button type="submit" className="form__btn-save">
             {buttonText}

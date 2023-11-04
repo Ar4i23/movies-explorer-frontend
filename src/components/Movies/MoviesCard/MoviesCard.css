@@ -111,6 +111,6 @@
 @media screen and (max-width: 320px) {
   .film {
     min-height: 237px;
-    outline: 2px red solid;
+    /*outline: 2px red solid;*/
   }
 }
