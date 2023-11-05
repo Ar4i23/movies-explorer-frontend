@@ -3,11 +3,11 @@
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
   max-width: 100%;
-  /* min-height: 281px;*/
+  min-height: 281px;
 }
 
 .film__image {
-  background-image: url(../../../images/film-img.jpg);
+  /*background-image: url(../../../images/film-img.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px transparent solid;

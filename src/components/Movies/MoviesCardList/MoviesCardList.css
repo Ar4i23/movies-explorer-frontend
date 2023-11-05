@@ -66,7 +66,7 @@
     height: 237px;
   }
   .films__list {
-    max-height: 1307px;
+    max-height: 100%;
     margin: 50px auto 10px;
     grid-template-columns: repeat(1, 300px);
     gap: 18px;

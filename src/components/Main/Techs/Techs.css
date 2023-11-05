@@ -60,11 +60,6 @@
   text-decoration: none;
 }
 
-.techs__list-item:hover {
-  border: 2px solid rgba(43, 224, 128, 0.2);
-  background-color: rgba(43, 224, 128, 0.2);
-}
-
 @media screen and (max-width: 1023px) {
   .techs {
     padding: 90px 50px;
