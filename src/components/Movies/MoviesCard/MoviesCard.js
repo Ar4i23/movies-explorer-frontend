@@ -12,7 +12,7 @@ function MoviesCard() {
   return (
     <>
       <li className="film">
-        <img src={filmImg} alt="" className="film__image" />
+        <img src={filmImg} alt="фото-карточка с картинкой к фильму" className="film__image" />
         <div className="film__wrapper">
           <div className="film__title-block">
             <h2 className="film__title">33 слова о дизайне</h2>
@@ -28,7 +28,7 @@ function MoviesCard() {
         </div>
       </li>
       <li className="film">
-        <img src={filmImg} alt="" className="film__image" />
+        <img src={filmImg} alt="фото-карточка с картинкой к фильму" className="film__image" />
         <div className="film__wrapper">
           <div className="film__title-block">
             <h2 className="film__title">33 слова о дизайне</h2>
@@ -39,7 +39,7 @@ function MoviesCard() {
       </li>
 
       <li className="film">
-        <img src={filmImg} alt="" className="film__image" />
+        <img src={filmImg} alt="фото-карточка с картинкой к фильму" className="film__image" />
         <div className="film__wrapper">
           <div className="film__title-block">
             <h2 className="film__title">33 слова о дизайне</h2>
@@ -56,7 +56,7 @@ function MoviesCard() {
       </li>
 
       <li className="film">
-        <img src={filmImg} alt="" className="film__image" />
+        <img src={filmImg} alt="фото-карточка с картинкой к фильму" className="film__image" />
         <div className="film__wrapper">
           <div className="film__title-block">
             <h2 className="film__title">33 слова о дизайне</h2>
@@ -73,7 +73,7 @@ function MoviesCard() {
       </li>
 
       <li className="film">
-        <img src={filmImg} alt="" className="film__image" />
+        <img src={filmImg} alt="фото-карточка с картинкой к фильму" className="film__image" />
         <div className="film__wrapper">
           <div className="film__title-block">
             <h2 className="film__title">33 слова о дизайне</h2>

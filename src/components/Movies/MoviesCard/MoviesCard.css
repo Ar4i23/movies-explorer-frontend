@@ -31,6 +31,9 @@
   font-size: 13px;
   line-height: 16px;
   color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .film__time {
@@ -89,7 +92,7 @@
 
 @media screen and (max-width: 767px) {
   .film {
-    height: 233px;
+    min-height: 233px;
   }
 
   .film__image {
@@ -110,7 +113,7 @@
 
 @media screen and (max-width: 320px) {
   .film {
-    min-height: 237px;
+    height: 237px;
     /*outline: 2px red solid;*/
   }
 }

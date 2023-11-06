@@ -5,7 +5,7 @@ import "./Profile.css";
 function Profile() {
   return (
     <>
-      <section className="profile">
+      <main className="profile">
         <h1 className="profile__title">Привет, Виталий!</h1>
         <form id="form" name="form-profile" className="profile__form" noValidate>
           <label className="profile__label">
@@ -41,7 +41,7 @@ function Profile() {
             Выйти из аккаунта
           </Link>
         </form>
-      </section>
+      </main>
     </>
   );
 }
