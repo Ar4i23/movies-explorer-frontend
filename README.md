@@ -1,16 +1,21 @@
-# movies-explorer-frontend
+This is my full application movies
 
-Верстка к дипломной работе по курсу Яндкес Практикума "Веб разработчик"
+# react-movies-full-gha
 
-### Название макета в фигме:
+Репозиторий для приложения проекта `Movies`, включающий фронтенд и бэкенд части приложения со следующими возможностями: авторизации и регистрации пользователей, операции с карточками и пользователями. Бэкенд расположите в директории `backend/`, а фронтенд - в `frontend/`.
 
-Dark-3
+Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 
-### ссылка в pullrequests:
+Адрес репозитория:https://github.com/Ar4i23/react-movies-full-gha
 
-https://github.com/Ar4i23/movies-explorer-frontend/pull/1
+## Ссылки на проект
 
-### ссылка на публичный репозиторий в github:
+IP-адрес 51.250.76.58
 
-https://Ar4i23.github.io/movies-explorer-frontend/
-.
+Frontend https://arthur.movies.nomoredomainsmonster.ru
+
+Backend https://api.arthur.movies.nomoredomainsrocks.ru
+
+## Ссылки на pullrequest
+
+https://github.com/Ar4i23/react-movies-full-gha/pull/1
