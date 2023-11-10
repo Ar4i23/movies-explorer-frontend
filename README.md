@@ -6,7 +6,7 @@ This is my full application movies
 
 Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 
-Адрес репозитория:https://github.com/Ar4i23/react-movies-full-gha
+Адрес репозитория:https://github.com/Ar4i23/movies-explorer-frontend
 
 ## Ссылки на проект
 
@@ -18,4 +18,4 @@ Backend https://api.arthur.movies.nomoredomainsrocks.ru
 
 ## Ссылки на pullrequest
 
-https://github.com/Ar4i23/react-movies-full-gha/pull/1
+https://github.com/Ar4i23/movies-explorer-frontend/pull/2
