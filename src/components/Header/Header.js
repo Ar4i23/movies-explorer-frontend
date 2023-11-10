@@ -6,36 +6,23 @@ import account from "../../images/account-button.svg";
 import menu from "../../images/menu-btn.svg";
 import Navigation from "../Navigation/Navigation";
 
-function Header() {
-  const [isClickOpen, setIsClickOpen] = React.useState(false);
+function Header({ loggedIn }) {
+  const [isClicked, setIsClicked] = React.useState(false);
 
-  const location = useLocation();
-
-  const getShowOneHeader = () => {
-    const { pathname } = location;
-    return pathname === "/";
-  };
-
-  const getShowTwoHeader = () => {
-    const { pathname } = location;
-    return (
-      pathname === "/movies" ||
-      pathname === "/saved-movies" ||
-      pathname === "/profile"
-    );
-  };
-
-  function handleOpenBurgerMenu() {
-    setIsClickOpen(true);
+  function handleOpenBurger() {
+    setIsClicked(true);
   }
 
-  function handleCloseBurgerMenu() {
-    setIsClickOpen(false);
+  function handleCloseBurger() {
+    setIsClicked(false);
   }
+
+  const setHeaderActiveColorLink = ({ isActive }) =>
+    isActive ? "header__button_active" : "header__button";
 
   return (
     <>
-      {getShowOneHeader() && (
+      {!loggedIn ? (
         <header className="header">
           <Link to="/" className="logo">
             <img src={logo} alt="Логотип сайта фильмов" />
@@ -52,18 +39,16 @@ function Header() {
             </Link>
           </nav>
         </header>
-      )}
-
-      {getShowTwoHeader() && (
+      ) : (
         <header className="header header_place_theme_dark">
           <Link to="/" className="logo">
             <img src={logo} alt="Логотип сайта по поиску фильмов" />
           </Link>
           <nav className="header__button-container-movie">
-            <NavLink to="/movies" className="header__button">
+            <NavLink to="/movies" className={setHeaderActiveColorLink}>
               Фильмы
             </NavLink>
-            <NavLink to="/saved-movies" className="header__button">
+            <NavLink to="/saved-movies" className={setHeaderActiveColorLink}>
               Сохранённые фильмы
             </NavLink>
           </nav>
@@ -75,15 +60,12 @@ function Header() {
                 alt="Кнопка входа в аккаунт"
               />
             </Link>
-            <button
-              className="header__button-menu"
-              onClick={handleOpenBurgerMenu}
-            >
+            <button className="header__button-menu" onClick={handleOpenBurger}>
               <img src={menu} alt="Кнопка меню" />
             </button>
           </div>
-          {isClickOpen ? (
-            <Navigation handleCloseBurgerMenu={handleCloseBurgerMenu} />
+          {isClicked ? (
+            <Navigation handleCloseBurger={handleCloseBurger} />
           ) : (
             ""
           )}

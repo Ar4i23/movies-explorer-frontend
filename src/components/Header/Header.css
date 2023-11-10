@@ -38,8 +38,14 @@
 }
 
 .header__button_active {
-  font-weight: 500;
-  color: #2be080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #9b9393;
+  text-decoration: none;
 }
 
 .header__button:hover {

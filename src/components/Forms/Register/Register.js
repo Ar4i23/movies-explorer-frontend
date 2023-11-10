@@ -1,15 +1,32 @@
 import React from "react";
 import "../../Forms/Form/Form.css";
 import Form from "../../Forms/Form/Form";
+import useForm from "../../../hooks/useForm";
+import { EMAIL_PATTERN } from "../../../utils/constants";
 
-function Register() {
+function Register({ onRegister, isLoading }) {
+  // Хук useForm
+  const { enteredValues, errors, handleChangeInput, isFormValid } = useForm();
+
+  function updateUserInfo(event) {
+    event.preventDefault();
+    onRegister({
+      name: enteredValues.name,
+      email: enteredValues.email,
+      password: enteredValues.password,
+    });
+  }
+
   return (
     <Form
       title="Добро пожаловать!"
       buttonText="Зарегистрироваться"
-      question="Уже зарегистрированы?"
+      registrationMessage="Уже зарегистрированы?"
       linkText=" Войти"
       link="/signin"
+      onSubmit={updateUserInfo}
+      isDisabledBtn={!isFormValid}
+      isLoading={isLoading}
     >
       <label className="form__label">
         Имя
@@ -20,9 +37,11 @@ function Register() {
           minLength="2"
           maxLength="40"
           placeholder="Имя"
+          onChange={handleChangeInput}
+          value={enteredValues.name || ""}
           required
         />
-        <span className="form__input-error">Заполните поле "Имя".</span>
+        <span className="form__input-error">{errors.name}</span>
       </label>
       <label className="form__label">
         E-mail
@@ -31,11 +50,12 @@ function Register() {
           className="form__input"
           type="email"
           placeholder="Email"
+          onChange={handleChangeInput}
+          value={enteredValues.email || ""}
+          pattern={EMAIL_PATTERN}
           required
         />
-        <span className="form__input-error">
-          Адрес электронной почты должен содержать символ "@".
-        </span>
+        <span className="form__input-error">{errors.email}</span>
       </label>
       <label className="form__label">
         Пароль
@@ -44,9 +64,13 @@ function Register() {
           className="form__input"
           type="password"
           placeholder="Пароль"
+          minLength="6"
+          maxLength="12"
+          onChange={handleChangeInput}
+          value={enteredValues.password || ""}
           required
         />
-        <span className="form__input-error">Заполните поле "Пароль".</span>
+        <span className="form__input-error">{errors.password}</span>
       </label>
     </Form>
   );
