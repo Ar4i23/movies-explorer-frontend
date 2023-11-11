@@ -32,6 +32,8 @@
   text-align: center;
   color: #4285f4;
   cursor: pointer;
+  background: transparent;
+  border: none;
 }
 
 .notfound__signout:hover {
@@ -59,7 +61,6 @@
     margin-bottom: 0px;
   }
 }
-
 
 @media screen and (max-width: 480px) {
   .notfound__title {

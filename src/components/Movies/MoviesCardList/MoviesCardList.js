@@ -45,13 +45,23 @@ function MoviesCardList({
   }, [cards]);
 
   useEffect(() => {
-    setTimeout(() => {
-      window.addEventListener("resize", showCounterDisplayMovies);
-    }, 500);
+    let resizeWindow;
+
+    function handleResize() {
+      clearTimeout(resizeWindow);
+      resizeWindow = setTimeout(() => {
+        showCounterDisplayMovies();
+      }, 500);
+    }
+    showCounterDisplayMovies();
+
+    window.addEventListener("resize", handleResize);
+
     return () => {
-      window.removeEventListener("resize", showCounterDisplayMovies);
+      clearTimeout(resizeWindow);
+      window.removeEventListener("resize", handleResize);
     };
-  });
+  }, []);
 
   // Увеличивает количество карточек при клике на кнопку Ещё
   function showMoviesCountPlayBtn() {

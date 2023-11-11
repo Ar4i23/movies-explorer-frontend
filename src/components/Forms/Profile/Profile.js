@@ -92,11 +92,11 @@ function Profile({ isLoading, signOut, onUpdateUser, loggedIn }) {
             disabled={!isFormValid ? true : false}
             className={
               !isFormValid || isLoading || isLastValues
-                ? "profile__button-edit form__btn-save_inactive"
+                ? "profile__button-edit profile__button-edit_inactive"
                 : "profile__button-edit"
             }
           >
-            Редактировать
+            {!isFormValid ? "Редактировать" : "Сохранить"}
           </button>
 
           <button onClick={signOut} className="profile__signout">
