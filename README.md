@@ -8,9 +8,14 @@ Dark-3
 
 ### ссылка в pullrequests:
 
-https://github.com/Ar4i23/movies-explorer-frontend/pull/1
+https://github.com/Ar4i23/movies-explorer-frontend/pull/3
 
 ### ссылка на публичный репозиторий в github:
 
 https://Ar4i23.github.io/movies-explorer-frontend/
-.
+
+### ссылки на Проект :
+
+Frontend https://arthur.movies.nomoredomainsmonster.ru
+
+Backend https://api.arthur.movies.nomoredomainsrocks.ru
