@@ -1,8 +1,8 @@
 import { checkRes } from "./configFunc";
 
-export const BASE_URL = "http://localhost:3000";
+//export const BASE_URL = "http://localhost:3000";
 
-//export const BASE_URL = "https://api.arthur.movies.nomoredomainsrocks.ru";
+export const BASE_URL = "https://api.arthur.movies.nomoredomainsrocks.ru";
 
 export const getContent = (token) => {
   return fetch(`${BASE_URL}/users/me`, {
